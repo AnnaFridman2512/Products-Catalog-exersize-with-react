@@ -20,7 +20,7 @@ reportWebVitals();
 //Use Fake Store AUPI to fetch products data and build a simple products page using Fetch API and React.
 //https://fakestoreapi.com/
 
-//1. Use useEffect to call fetch function to call the products API at https://fakestoreapi.com/products
+//1. Use useEffect to call fetch function to call the products API at https://fakestoreapi.com/products 
 //2. Save the response into a state called 'products'
 //3. Render the products state into the DOM as a simple list of products
 //4. Create a <Product /> component that will receive all the keys in the product object as props
