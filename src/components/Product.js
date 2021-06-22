@@ -7,6 +7,7 @@ function Product({ //After we fetched the products, we destructure, to get the k
   image,
   title,
   price,
+  onAddToCart,//A function that adds to cart on button click 
 }) {
   return ( //here we render all the keys we got to the DOM 
     <div className="product">
@@ -14,10 +15,10 @@ function Product({ //After we fetched the products, we destructure, to get the k
       <span>{category}</span>
       <h3>{title}</h3>
       <p>{description}</p>
-      <button>Add to cart ${price}</button>
-    </div>
-  );
-}
+      <button onClick={() => onAddToCart(id)}>Add to cart ${price}</button>{/*When the button is clicked*/}
+     </div>                                                                 //call the onAddToCartf function
+  );                                                                        //and pass it the id of the product
+}                                                                           //so it will add the id to the cart
 
 export default Product;
 
