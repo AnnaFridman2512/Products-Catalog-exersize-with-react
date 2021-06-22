@@ -14,7 +14,7 @@ function Product({ //After we fetched the products, we destructure, to get the k
       <span>{category}</span>
       <h3>{title}</h3>
       <p>{description}</p>
-      <button>Buy ${price}</button>
+      <button>Add to cart ${price}</button>
     </div>
   );
 }
